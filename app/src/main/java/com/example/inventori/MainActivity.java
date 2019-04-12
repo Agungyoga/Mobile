@@ -1,22 +1,18 @@
 package com.example.inventori;
 
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.bottom);
 
         //Menampilkan halaman Fragment yang pertama kali muncul
         getFragmentPage(new Home());
@@ -42,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.notidications:
+                        fragment = new Peminjam();
+                        break;
+                    case R.id.dipinjam:
                         fragment = new Peminjam();
                         break;
                 }

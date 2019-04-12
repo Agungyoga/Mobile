@@ -6,11 +6,14 @@
         android:title="Home" />
 
     <item android:id="@+id/person"
-        android:icon="@drawable/profil"
-        android:title="Profile" />
+        android:icon="@drawable/barang"
+        android:title="Barang Rusak" />
 
     <item android:id="@+id/notidications"
         android:icon="@drawable/peminjam"
         android:title="Peminjam" />
+    <item android:id="@+id/dipinjam"
+        android:icon="@drawable/barang_dipinjam"
+        android:title="Barang diPinjam" />
 
 </menu>
